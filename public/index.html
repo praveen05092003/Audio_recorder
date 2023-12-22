@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Recording App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #3498db;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    /* Add styling for the recordings list */
+    #recordings-list {
+      margin-top: 20px;
+    }
+
+    #recordings-list div {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="record">Record</button>
+  <button id="stop" disabled>Stop</button>
+  <button id="upload" disabled>Upload</button>
+  <button id="play" disabled>Play Last Recording</button>
+  <p id="timestamp">Recording duration: 00:00</p>
+  <audio controls></audio>
+  <div id="recordings-list"></div>
+  <script src="main.js"></script>
+</body>
+</html>
